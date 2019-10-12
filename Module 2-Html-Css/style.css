@@ -1,50 +1,69 @@
-	* {
-		box-sizing: border-box;
+* {
+		
+    
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+        
 	}
-	body {
-		background-color: white;
+body {
+		
+       background-color: #F1E291;
+	font-family: 'Myriad Pro', 'Myriad', helvetica, arial, sans-serif; 
 	}
-	h1 {
-		margin: 100px;
-		text-align: center;
-		font-family: Helvetica;
-		font-weight: bold;
-		font-size: 175%;
-	}
-	section {
+
+#h1-header {
+text-shadow: 1px 2px 1px rgba(137,127,125,0.5);
+	text-align: center;
+	font-size: 175%;
+	font-weight: bold;
+	color: #771E10;   
+    padding: 20px;
+}
+
+section {
 		position: relative;
 		padding: 15px;
 		width: 100%;
+    float: left;
+	padding: 10px;
 	}
-	p {
-		position: relative;
+p {
+		position:relative;
 		clear: right;
-	}
-	div {
+}
+div {
 		position: relative;
-		background-color: gray;
+		background-color: #EBC137;
 		border: 1px solid black;
+        padding: 5px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: auto;
 	}
-	.sub1 {
+
+.sub1 {
+        text-shadow: 1px 2px 1px rgba(137,127,125,0.5);
+
 		float: right;
-		width: 100px;
+		width: 300px;
 		padding: 5px;
-		margin: 0px;
+		margin: 5px;
 		border: 1px solid black;
 		text-align: center;
 		font-size: 125%;
 		font-weight: bold;
 		background-color: white;
 		
-	}
+}
+    
 	.sub2 {
+            text-shadow: 1px 2px 1px rgba(137,127,125,0.5);
+
 		float: right;
 		color: white;
-		width: 100px;
+		width: 300px;
 		padding: 5px;
 		margin: 0px;
 		border: 1px solid black;
@@ -54,10 +73,13 @@
 		background-color: maroon;
 		
 	}
+
 	.sub3 {
+            text-shadow: 1px 2px 1px rgba(137,127,125,0.5);
+
 		color: black;
 		float: right;
-		width: 100px;
+		width: 300px;
 		padding: 5px;
 		margin: 0px;
 		border: 1px solid black;
@@ -67,22 +89,30 @@
 		background-color: tomato;
 		
 	}
+
 	.content {
 		padding: 5px;
-		border: none;
-		background-color: gray;
+		
 		font-family: Helvetica;
 		color: black;
 		margin: 0px;
 		height: 200px;
 		overflow: auto;
-	}
+        
+    border: 1px solid black;
+	background-color: #D4A357;
+	color: #4B3327;
+	border-radius: 5px;
 	
-	.row {
-		width: 90%;
-	}
-	
-	/*desktop version*/
+}
+
+.content:hover {
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+    background-color: #D18F2E;
+    box-shadow: 10px 10px 5px #771E10;
+}
+/*desktop version*/
 	@media (min-width: 992px){
 		.column-lg-4 {
 			float: left;
@@ -110,4 +140,4 @@
 			float: left;
 			width: 100%;
 		}
-	}
+}
